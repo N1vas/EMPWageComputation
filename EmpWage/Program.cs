@@ -1,5 +1,4 @@
 ﻿using System;
-
 namespace EmpWage
 {
     class Program
@@ -12,7 +11,6 @@ namespace EmpWage
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to Employee Wage Computation Problem on Master Branch");
-
             int empHrs = 0;
             int empWage = 0;
             int totalEmpWage = 0;
@@ -35,11 +33,8 @@ namespace EmpWage
                         empHrs = 0;
                         break;
                 }
-
-                //empWage = empHrs * EMP_RATE_PER_HOUR;
                 totalEmpHrs += empHrs;
                 Console.WriteLine("Day:"+  totalWorkingDays+" Emp hrs "+empHrs );
-                //Console.ReadKey();
             }
              totalEmpWage = totalEmpHrs * EMP_RATE_PER_HOUR;
             Console.WriteLine("Total Emp Wage : "+totalEmpWage);
