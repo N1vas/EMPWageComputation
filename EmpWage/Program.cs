@@ -8,7 +8,7 @@ namespace EmpWage
         public const int EMP_RATE_PER_HOUR = 20;
         public const int NUM_OF_WORKING_DAYS = 2;
         public const int MAX_HRS_IN_MONTH = 10;
-        static void Main(string[] args)
+        public static int computeEmpWage()
         {
             Console.WriteLine("Welcome to Employee Wage Computation Problem on Master Branch");
             int empHrs = 0;
@@ -38,6 +38,11 @@ namespace EmpWage
             }
              totalEmpWage = totalEmpHrs * EMP_RATE_PER_HOUR;
             Console.WriteLine("Total Emp Wage : "+totalEmpWage);
+            return totalEmpWage;
+        }
+        static void Main(string[] args)
+        {
+            computeEmpWage();
         }
     }
 }
